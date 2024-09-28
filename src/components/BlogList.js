@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import { ChevronDownIcon, Trash2Icon, EditIcon } from "lucide-react";
 import EditPostForm from "./EditPostForm";
@@ -13,11 +13,7 @@ const BlogList = ({ onPostUpdated }) => {
   const repo = process.env.REACT_APP_GITHUB_REPO;
   const filename = "blogs";
 
-  useEffect(() => {
-    fetchPosts();
-  }, []);
-
-  const fetchPosts = async () => {
+  const fetchPosts = useCallback(async () => {
     try {
       const response = await axios.get(
         `https://api.github.com/repos/${repo}/contents/${filename}`,
@@ -35,7 +31,11 @@ const BlogList = ({ onPostUpdated }) => {
     } catch (error) {
       console.error("Error fetching posts:", error);
     }
-  };
+  }, [repo, filename, token]);
+
+  useEffect(() => {
+    fetchPosts();
+  }, [fetchPosts]);
 
   const deletePost = async (postId) => {
     if (!window.confirm("Are you sure you want to delete this post?")) return;

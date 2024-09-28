@@ -65,7 +65,7 @@ const EditPostForm = ({ post, onCancel, onSave }) => {
         try {
           const content = e.target.result.split(",")[1]; // Get base64 content
           const filename = `${fileType}/${Date.now()}-${file.name}`;
-          const response = await axios.put(
+          await axios.put(
             `https://api.github.com/repos/${repo}/contents/${filename}`,
             {
               message: `Upload ${filename}`,

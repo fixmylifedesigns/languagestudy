@@ -44,7 +44,7 @@ const BlogPostCreator = ({ onPostAdded, initialTextToSpeech, audioBlob }) => {
           const filename = `${fileType}/${Date.now()}-${
             file.name || "audio.mp3"
           }`;
-          const response = await axios.put(
+          await axios.put(
             `https://api.github.com/repos/${repo}/contents/${filename}`,
             {
               message: `Upload ${filename}`,

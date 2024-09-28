@@ -8,7 +8,7 @@ const LandingPage = () => {
       {/* Navigation Bar */}
       <nav className="flex justify-between items-center p-6">
         <h1 className="text-2xl font-bold" id="app-logo">
-          LinguaTrack
+          Moeno
         </h1>
         <Link
           to="/blog"
@@ -95,7 +95,7 @@ const LandingPage = () => {
 
         {/* App Preview Section */}
         <section className="mt-16 text-center" id="app-preview-section">
-          <h3 className="text-3xl font-bold mb-8">See LinguaTrack in Action</h3>
+          <h3 className="text-3xl font-bold mb-8">See Moeno in Action</h3>
           <div className="bg-gray-800 p-4 rounded-lg inline-block">
             {/* Placeholder for app screenshot or video */}
             <div className="w-64 h-128 bg-gray-700 rounded-lg flex items-center justify-center">
@@ -107,7 +107,7 @@ const LandingPage = () => {
 
       {/* Footer */}
       <footer className="bg-gray-900 text-center py-6 mt-16">
-        <p>&copy; 2024 LinguaTrack. All rights reserved.</p>
+        <p>&copy; 2024 Moeno. All rights reserved.</p>
       </footer>
     </div>
   );
