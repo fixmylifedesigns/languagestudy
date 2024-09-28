@@ -1,0 +1,54 @@
+{
+  "phrases": [
+    {
+      "id": 1,
+      "phrase": "The early bird catches the worm.",
+      "translation": "早起きは三文の得。"
+    },
+    {
+      "id": 2,
+      "phrase": "Actions speak louder than words.",
+      "translation": "言葉より行動。"
+    },
+    {
+      "id": 3,
+      "phrase": "Every cloud has a silver lining.",
+      "translation": "何事にも良い面がある。"
+    },
+    {
+      "id": 4,
+      "phrase": "Don't judge a book by its cover.",
+      "translation": "見かけで判断するな。"
+    },
+    {
+      "id": 5,
+      "phrase": "Time flies when you're having fun.",
+      "translation": "楽しい時間は早く過ぎる。"
+    },
+    {
+      "id": 6,
+      "phrase": "Better late than never.",
+      "translation": "遅くともしないよりはまし。"
+    },
+    {
+      "id": 7,
+      "phrase": "When in Rome, do as the Romans do.",
+      "translation": "郷に入っては郷に従え。"
+    },
+    {
+      "id": 8,
+      "phrase": "The grass is always greener on the other side.",
+      "translation": "隣の芝生は青く見える。"
+    },
+    {
+      "id": 9,
+      "phrase": "Practice makes perfect.",
+      "translation": "練習は完璧を作る。"
+    },
+    {
+      "id": 10,
+      "phrase": "Laughter is the best medicine.",
+      "translation": "笑いは最良の薬。"
+    }
+  ]
+}
